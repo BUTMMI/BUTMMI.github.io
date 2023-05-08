@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+  background-color:#C6D7EB;
+  color:black;
+}
+
+header {
+  background-color:#1868AE;
+  color:black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  color: black;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  color:black;
+  text-decoration: none;
+}
+
+
+
+section h2 {
+  margin-bottom: 1em;
+  color: black;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+
+section li {
+  margin: 0 1em 1em 0;
+  width: 300px;
+}
+
+section h3{
+  color: black;
+}
+
+#apropos table {
+   table-layout: fixed;
+  width: 75%;
+  border-collapse: collapse;
+  border: 3px solid #1868AE;
+}
+#projets table{
+  width:98%;
+  table-layout: fixed;
+
+}
+
+footer{
+  padding: 30px 0px;
+  background-color: #1868AE;
+  height: 100px;
+}
+
+footer hr{
+  overflow: hidden;
+  padding-left: initial;
+  background-color: #1868AE;
+}
+
+footer a{
+  padding: 10px;
+  background-color: #1868AE;
+
+}
+
+footer li{
+    color: white;
+    padding-top: 3px;
+    display: inline;
+    padding: 10px;
+    background-color: #1868AE;
+}
+section footer {
+  background-color: #1868AE
+}
+.image-clignote  {
+   animation-duration: 5s;
+   animation-name: clignoter;
+   animation-iteration-count: infinite;
+   transition: none;
+}
+
+@keyframes clignoter {
+  0%   { opacity:1; }
+  40%   {opacity:0; }
+  100% { opacity:1; }
+}
+section#apropos {
+  padding: 2em;
+}
+
+footer {
+  height: fit-content;
+}
+@media screen and (max-width: 600px) {
+  body {
+      column-count: 2;
+      column-gap: 20px;
+  }
+}
+#competence div {
+    padding-right: 10px;
+    font-size: 1rem;
+    font-family: system-ui;
+
+}
+#competence table {
+  width:25%;
+  table-layout: fixed;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles pour les écrans avec une largeur maximale de 767 pixels */
+  
+  /* Réduire la taille de la police */
+  body {
+    font-size: 14px;
+  }
+  
+  /* Réduire la taille de la bannière en-tête */
+  header {
+    height: 80px;
+  }
+  
+  /* Réduire la largeur du contenu principal */
+  main {
+    width: 90%;
+  }
+  
+  /* Modifier la mise en page pour une meilleure lisibilité */
+  main article {
+    margin: 20px 0;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Ajuster le positionnement du pied de page */
+  footer {
+    margin-top: 20px;
+  }
+}
